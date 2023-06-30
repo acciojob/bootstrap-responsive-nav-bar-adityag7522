@@ -3,12 +3,88 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+	 <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+    <img src="data:image/jpeg;base64,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">
+    <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" 
+            aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Bootcamps
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Popular Bootcamps</li>
+            <li><a class="dropdown-item" href="#">Bootcamp Developers</a></li>
+            <li><a class="dropdown-item" href="#">Bootcamp Financing</a></li>
+            <li><a class="dropdown-item" href="#">Bootcamp Grads and Alumni</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Coding
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Coding tools</li>
+              <li><a class="dropdown-item" href="#">HTML</a></li>
+              <li><a class="dropdown-item" href="#">CSS</a></li>
+              <li><a class="dropdown-item" href="#">JS</a></li>
+              <li><a class="dropdown-item" href="#">PYTHON</li>
+                <li><a class="dropdown-item" href="#">Ruby</a></li>
+                <li><a class="dropdown-item" href="#">C++</a></li>
+                <li><a class="dropdown-item" href="#">Java</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Career Resources
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Career Advice</li>
+              <li><a class="dropdown-item" href="#">Interviews</a></li>
+              <li><a class="dropdown-item" href="#">Tech Cities</a></li>
+              <li><a class="dropdown-item" href="#">Tech Salaries</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tech Fields
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Web Design</li>
+              <li><a class="dropdown-item" href="#">Web Development</a></li>
+              <li><a class="dropdown-item" href="#">Software Engineering</a></li>
+              <li><a class="dropdown-item" href="#">Data Science</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News & Commentary</a>
+          </li>
+  
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav> <!--body must be written by student -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </script>
 
 </body>
